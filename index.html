@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>رزرو هتل - سامانه رزرواسیون</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<img src="photo/5ElkdaDaXv4txp-6a820420becf437d8daaa4e6b18fe052.jpg" class="air_train_bus">
 <nav class="topnav">
     <div class="container nav-inner">
         <div class="brand">رزرو هتل</div>
@@ -22,5 +23,80 @@
         </div>
     </div>
 </nav>
+<br>
+
+<div class="radio-group">
+    <label><input type="radio" name="mode" checked> خارجی</label>
+    <label><input type="radio" name="mode"> داخلی</label>
+    <label><input type="radio" name="tripType" checked> یک‌طرفه</label>
+    <label><input type="radio" name="tripType"> رفت و برگشت</label>
+</div>
+<br>
+
+<section class="inputs">
+    <div class="airport_input">
+        <input list="cities" type="text" name="origin" placeholder="فرودگاه مبدا">
+        <datalist id="cities">
+            <option value="تهران">
+            <option value="اصفهان">
+            <option value="مشهد">
+            <option value="شیراز">
+            <option value="تبریز">
+            <option value="اهواز">
+        </datalist>
+        <input list="airport_list" type="text" name="origin" placeholder="فرودگاه مقصد">
+        <datalist id="airport_list">
+            <option value="تهران">
+            <option value="اصفهان">
+            <option value="مشهد">
+            <option value="شیراز">
+            <option value="تبریز">
+            <option value="اهواز"></option>
+        </datalist>
+        <input type="text" name="depart" placeholder="تاریخ پرواز">
+        <input type="text" name="back" placeholder="تاریخ برگشت ">
+
+        <input type="text" id="number" name="number_pperson" placeholder="تعداد مسافر">
+    </div>
+    <div class="button-row">
+        <button type="button">جست‌وجوی پرواز</button>
+    </div>
+</section>
+
+
+<section class="features">
+    <h2 class="section-title"> سامانه رزرو اینترنتی بلیط سفر وهتل </h2>
+
+    <div class="features-container">
+        <div class="feature-box">
+            <img src="icon/phone.svg" alt="پشتیبان سفر" class="feature-icon">
+            <h3>پشتیبان سفر</h3>
+            <p>از لحظه تصمیم تا پایان سفر کنار شما هستیم!</p>
+        </div>
+
+        <div class="feature-box">
+            <img src="icon/file.svg" alt="مدیریت هزینه" class="feature-icon">
+            <h3>مشاور در مدیریت هزینه</h3>
+            <p>با ارائه قابلیت‌های هوشمند، کمک می‌کنیم تا سفری به‌صرفه داشته باشید!</p>
+        </div>
+
+        <div class="feature-box">
+            <img src="icon/shopping cart.svg" alt="تجربه خرید" class="feature-icon">
+            <h3>تجربه دلچسب خرید</h3>
+            <p>دغدغه ما در طراحی، سادگی و خرید آسان است.</p>
+        </div>
+
+        <div class="feature-box">
+            <img src="icon/money.svg" alt="موجودی کامل" class="feature-icon">
+            <h3>موجودی کامل</h3>
+            <p>با ارائه حداکثری موجودی، برنامه‌ریزی سفر را برای هر زمان و مقصدی ممکن کرده‌ایم.</p>
+        </div>
+    </div>
+</section>
+
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
